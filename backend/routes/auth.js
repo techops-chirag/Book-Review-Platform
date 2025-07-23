@@ -4,7 +4,7 @@ const jwt = require('jsonwebtoken');
 const db = require('../database');
 const router = express.Router();
 
-const JWT_SECRET = "your_jwt_secret_key"; // Use a strong secret in a .env file for production
+const JWT_SECRET = "sainichirag@123"; // Use a strong secret in a .env file for production
 
 // Signup Route
 router.post('/signup', (req, res) => {
