@@ -1,3 +1,7 @@
+// File: frontend/src/pages/AuthPage.js
+// Updated with console logging for debugging purposes.
+'use client';
+
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { signup, login } from '../services/api';
@@ -21,12 +25,19 @@ const AuthPage = () => {
         try {
             if (isLogin) {
                 const { data } = await login({ username, password });
+                
+                // --- DEBUGGING LOG ---
+                // We are logging the token to confirm it's received from the backend.
+                console.log("Login successful. Token received:", data.token);
+                // --- END DEBUGGING LOG ---
+
                 localStorage.setItem('token', data.token);
                 localStorage.setItem('username', data.username);
                 navigate('/');
             } else {
                 await signup({ username, password });
-                setIsLogin(true); // Switch to login form after successful signup
+                alert('Signup successful! Please log in.');
+                setIsLogin(true);
             }
         } catch (err) {
             setError(err.response?.data?.message || "An error occurred.");

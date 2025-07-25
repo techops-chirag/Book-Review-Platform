@@ -54,4 +54,16 @@ cd backend
 npm install
 
 # Start the server
-node server.js
+npm start
+
+### 2. Frontend Setup
+
+```bash
+# Navigate to the backend directory
+cd frontend
+
+# Install dependencies
+npm install
+
+# Start the server
+npm run dev
