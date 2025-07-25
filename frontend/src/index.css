@@ -1,0 +1,138 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 20px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #fff;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar a {
+  text-decoration: none;
+  color: #5b21b6;
+  margin: 0 1rem;
+  font-weight: 500;
+}
+.navbar-logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.navbar button {
+  background: #5b21b6;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Forms */
+.form-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  max-width: 400px;
+  margin: 2rem auto;
+}
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.form-group {
+  margin-bottom: 1rem;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.form-container button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #5b21b6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.form-container p {
+  text-align: center;
+  margin-top: 1rem;
+  cursor: pointer;
+  color: #5b21b6;
+}
+.error-message {
+  color: #dc2626;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+/* Book List */
+.filters {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.filters input {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+.book-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.book-card h3 {
+  margin-top: 0;
+}
+
+/* Book Detail */
+.book-detail {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+}
+.review-section {
+  margin-top: 2rem;
+}
+.review-card {
+  border-top: 1px solid #eee;
+  padding: 1rem 0;
+}
+.star-rating span {
+  color: #f59e0b;
+  font-size: 1.25rem;
+}
