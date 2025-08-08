@@ -20,7 +20,7 @@ A full-stack web application built in 48 hours that allows users to browse, add,
 
 | Layer       | Technology                  |
 |-------------|------------------------------|
-| Frontend    | React with Hooks (CRA)       |
+| Frontend    | Next.js, React.js       |
 | Backend     | Node.js, Express             |
 | Database    | SQLite                       |
 | Auth        | JWT                          |
